@@ -40,7 +40,8 @@ def cnpj1 (x): #Validação do primeiro digito do cnpj
     verificação = soma % 11
     if verificação < 2:
         verificação = 0
-    verificação = 11 - verificação
+    else:
+        verificação = 11 - verificação
     if verificação == x[12]:
         return 0
     else:
@@ -55,7 +56,8 @@ def cnpj2 (x): #Validação do segundo digito do cnpj
     verificação = (soma % 11)
     if verificação < 2:
         verificação = 0
-    verificação = 11 - verificação
+    else:
+        verificação = 11 - verificação
     if verificação == x[13]:
         return 0
     else:
